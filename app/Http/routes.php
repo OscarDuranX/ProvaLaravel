@@ -17,3 +17,5 @@ Route::get('/', function () {
 });
 
 Route::get('/helloworld',"HolaMonController@hello");
+
+Route::resource('user','UserController');
