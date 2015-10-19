@@ -74,3 +74,7 @@ Route::get('prova8', function () {
     return[
         'name' => 'Pepesi', 'stats' => 'raro'];
 });
+
+Route::get('prova9', function () {
+    return redirect('http://www.google.com');
+});
