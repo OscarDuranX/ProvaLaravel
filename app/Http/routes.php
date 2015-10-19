@@ -57,3 +57,20 @@ Route::get('prova5', function () {
         ->header('Content-Type', $contentType)
         ->header('MyHeader', 'Prova 1 2 3 los microfonos');
 });
+
+Route::get('prova6', function () {
+    $pathToFile = public_path('prova.pdf');
+
+    dd($pathToFile);
+    //return response()->download($pathToFile);
+});
+
+Route::get('prova7', function () {
+    return response()->json([
+        'name' => 'Pepesi', 'stats' => 'raro']);
+});
+
+Route::get('prova8', function () {
+    return[
+        'name' => 'Pepesi', 'stats' => 'raro'];
+});
