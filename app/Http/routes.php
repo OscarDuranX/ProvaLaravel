@@ -19,3 +19,8 @@ Route::get('/', function () {
 Route::get('/helloworld',"HolaMonController@hello");
 
 Route::resource('user','UserController');
+
+
+Route::get('/prova', function () {
+    return '<h1>Hello World</h1>';
+});
