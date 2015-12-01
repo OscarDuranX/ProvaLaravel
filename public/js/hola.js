@@ -9,3 +9,13 @@ function hello() {
 function bye(){
     console.info("bye");
 }
+$(function(){
+    $('#sayhello ').click( function(){
+            console.debug("prova");
+            alert("Holas!");
+        $('#helloworld').show();
+    });
+
+    //$('#helloworld').show
+
+});
